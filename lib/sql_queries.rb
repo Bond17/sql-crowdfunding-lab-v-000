@@ -9,8 +9,8 @@
 def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_name
 "Write your SQL query Here"
 #select titles from projects select plege ammounts from pledges sort by name
-"SELECT projects.title, SUM(pledges.amount)
-FROM projects LEFT JOIN pledges ON pledges.project_id=projects.id ORDER BY title;"
+"SELECT projects.title, pledges.amount
+FROM projects LEFT JOIN pledges ON pledges.project_id=projects.id GROUP BY title;"
 
 end
 
